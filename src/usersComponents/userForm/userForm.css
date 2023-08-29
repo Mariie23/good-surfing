@@ -1,0 +1,30 @@
+input {
+    border: 1px solid var(--gray-color);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 14px;
+    font-size: 16px;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    flex-grow: 1;
+}
+label {
+    color: var(--gray-color);
+}
+
+.btn {
+    padding: 15px 20px;
+    background-color: #3DABF7;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    justify-content: center;
+}
+.btn:disabled {
+    background-color: var(--gray-color);
+}

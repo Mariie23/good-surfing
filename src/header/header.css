@@ -1,0 +1,54 @@
+.header {
+    height: 80px;
+    padding: 17px 0;
+    background-color: #fff;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+    column-gap: 26px;
+}
+
+.header__right {
+    display: flex;
+    column-gap: 36px;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.language {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+
+}
+.rectangle {
+    width: 0; 
+height: 0;
+border-left: 3px solid transparent;
+border-right: 3px solid transparent;
+border-top: 3px solid var(--black-color);
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.login__avatar {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}

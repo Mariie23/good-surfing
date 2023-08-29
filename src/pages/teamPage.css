@@ -1,0 +1,7 @@
+.user-form {
+    margin: 40px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    column-gap: 20px;
+}
