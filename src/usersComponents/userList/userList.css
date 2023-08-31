@@ -5,3 +5,8 @@
     column-gap: 30px;
     row-gap: 15px;
 }
+
+.user-list--empty {
+    display: block;
+    font-size: 18px;
+}

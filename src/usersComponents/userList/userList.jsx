@@ -4,8 +4,8 @@ import "./userList.css";
 
 const UserList = ({ users, onSelect, onDelete }) => {
   return (
-    <div className="user-list">
-      {users &&
+    <div className={"user-list" + (users.length ? "" : " user-list--empty")}>
+      {users.length ? (
         users.map((user) => (
           <UserItem
             key={user.id}
@@ -17,7 +17,10 @@ const UserList = ({ users, onSelect, onDelete }) => {
             onSelect={onSelect}
             onDelete={onDelete}
           />
-        ))}
+        ))
+      ) : (
+        <span>Пользователи с данным email не найдены</span>
+      )}
     </div>
   );
 };

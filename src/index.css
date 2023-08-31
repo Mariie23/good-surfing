@@ -30,7 +30,7 @@
     overflow-x: hidden;
 }
 .wrapper {
-    padding-top: 36px;
+    padding: 36px 0 48px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     column-gap: 20px;

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import useFetch from "../hooks/useFetch";
 import UserList from "../usersComponents/userList/userList";
 import UserForm from "../usersComponents/userForm/userForm";
 import findUser from "../utils/findUser";
-import "./teamPage.css";
 
 const TeamPage = () => {
   const [email, setEmail] = useState("");
@@ -50,7 +49,7 @@ const TeamPage = () => {
       </p>
       <UserForm
         email={email}
-        users={allUsers}
+        users={filteredUsers}
         onChange={handleChangeEmail}
         onAddUser={handleAddUser}
       />

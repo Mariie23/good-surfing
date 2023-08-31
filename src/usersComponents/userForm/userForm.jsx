@@ -8,6 +8,7 @@ const UserForm = ({ email, users, onAddUser, onChange }) => {
       <div className="form-control">
         <label htmlFor="email">Введите e-mail участника</label>
         <input
+          className={users.length ? "" : "invalid"}
           type="text"
           name="email"
           id="email"
